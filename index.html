@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Nguyễn Xuân Thịnh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .section-title {
+            @apply text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-500 pb-2;
+        }
+        .timeline-item::before {
+            content: '';
+            @apply absolute w-4 h-4 bg-blue-500 rounded-full left-0 top-0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto max-w-4xl bg-white shadow-lg rounded-lg my-8 p-8">
+        <!-- Language Switcher -->
+        <div class="flex justify-end mb-4">
+            <button id="lang-vi" class="px-4 py-2 bg-blue-500 text-white rounded-l-md hover:bg-blue-600">Tiếng Việt</button>
+            <button id="lang-en" class="px-4 py-2 bg-gray-300 text-gray-800 rounded-r-md hover:bg-gray-400">English</button>
+        </div>
+
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row items-center md:items-start mb-8">
+            <img src="avatar.jpg" alt="Avatar" class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-6 object-cover border-4 border-blue-500">
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl font-bold text-gray-800" data-lang-key="name">Nguyễn Xuân Thịnh</h1>
+                <h2 class="text-xl text-gray-600" data-lang-key="title">Software Engineer</h2>
+                <div class="mt-4 flex flex-col md:flex-row gap-2 text-gray-700">
+                    <p><span class="font-semibold" data-lang-key="phone_label">Phone:</span> 0357548301</p>
+                    <p><span class="font-semibold" data-lang-key="email_label">Email:</span> <a href="mailto:xthinh04052002@gmail.com" class="text-blue-500 hover:underline">xthinh04052002@gmail.com</a></p>
+                    <p><span class="font-semibold" data-lang-key="address_label">Address:</span> <span data-lang-key="address">Tăng Nhơn Phú A, TP. Thủ Đức</span></p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Career Objective -->
+        <section class="mb-8">
+            <h2 class="section-title" data-lang-key="career_objective_title">Mục Tiêu Nghề Nghiệp</h2>
+            <p class="text-gray-700 leading-relaxed" data-lang-key="career_objective">
+                Tôi mong muốn nâng cao kỹ năng phát triển phần mềm thông qua các dự án thực tế, tập trung vào giải quyết vấn đề, thiết kế hệ thống và chuyên môn kỹ thuật. Mục tiêu dài hạn là trở thành một lập trình viên xuất sắc, có khả năng xây dựng các ứng dụng mở rộng, hiệu suất cao, đóng góp các giải pháp sáng tạo và đảm nhận vai trò lãnh đạo trong lĩnh vực phát triển phần mềm.
+            </p>
+        </section>
+
+        <!-- Skills -->
+        <section class="mb-8">
+            <h2 class="section-title" data-lang-key="skills_title">Kỹ Năng</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800" data-lang-key="technical_skills">Kỹ Năng Kỹ Thuật</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Java, PHP</li>
+                        <li>JavaScript, HTML, CSS, Bootstrap</li>
+                        <li>Spring Boot, RESTful API, MVC</li>
+                        <li>Microservice, Kafka, RabbitMQ</li>
+                        <li>MySQL, SQL Server</li>
+                        <li data-lang-key="tools">Tools: Visual Studio Code, IntelliJ IDEA, Android Studio, Docker, Git, Postman</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800" data-lang-key="soft_skills">Kỹ Năng Mềm</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li data-lang-key="problem_solving">Giải quyết vấn đề</li>
+                        <li data-lang-key="teamwork">Làm việc nhóm</li>
+                        <li data-lang-key="communication">Giao tiếp</li>
+                        <li data-lang-key="time_management">Quản lý thời gian</li>
+                        <li data-lang-key="adaptability">Khả năng thích ứng</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-8">
+            <h2 class="section-title" data-lang-key="education_title">Học Vấn</h2>
+            <div class="relative pl-8">
+                <div class="timeline-item relative mb-6">
+                    <p class="text-gray-700"><span class="font-semibold">2020 - 2025</span> | <span data-lang-key="university">Học viện Công nghệ Bưu chính Viễn thông (PTIT)</span></p>
+                    <p class="text-gray-700" data-lang-key="major">Chuyên ngành: Công nghệ Phần mềm</p>
+                    <p class="text-gray-700" data-lang-key="degree_classification">Xếp loại tốt nghiệp: Khá</p>
+                    <p class="text-gray-700" data-lang-key="scholarship">Đạt học bổng học tập học kỳ 2 năm học 2023-2024</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="mb-8">
+            <h2 class="section-title" data-lang-key="projects_title">Dự Án</h2>
+            <div class="space-y-6">
+                <!-- Project 1 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800" data-lang-key="project1_title">Website Cửa hàng Thời trang (09/2024 - 10/2024)</h3>
+                    <p class="text-gray-600 italic" data-lang-key="fullstack_role">Full-Stack</p>
+                    <p class="text-gray-700"><span class="font-semibold" data-lang-key="description_label">Mô tả:</span> <span data-lang-key="project1_description">Website hỗ trợ khách hàng đăng nhập, đăng ký, quản lý giỏ hàng, thanh toán, đánh giá sản phẩm, và quản lý thông tin cá nhân. Phía quản trị viên có thể quản lý sản phẩm, thuộc tính sản phẩm, nhà cung cấp, khách hàng, đơn hàng và thống kê.</span></p>
+                    <p class="text-gray-700"><span class="font-semibold" data-lang-key="technologies_label">Công nghệ sử dụng:</span></p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li data-lang-key="project1_tech_backend">Backend: Java (Spring Boot), Hibernate, JPA, MySQL</li>
+                        <li data-lang-key="project1_tech_frontend">Frontend: HTML, CSS, JavaScript, Bootstrap</li>
+                        <li data-lang-key="project1_architecture">Kiến trúc: MVC</li>
+                    </ul>
+                    <p class="text-gray-700"><span class="font-semibold">GitHub:</span> <a href="https://github.com/yourusername/Website-Fashion-Store" class="text-blue-500 hover:underline" data-lang-key="project1_github">Website Fashion Store</a></p>
+                </div>
+                <!-- Project 2 -->
+                <div>
+                    <h3 class="text-lg font-semibold text-gray-800" data-lang-key="project2_title">Website & App Quản lý Chi tiêu (03/2024 - 05/2024)</h3>
+                    <p class="text-gray-600 italic" data-lang-key="backend_role">Backend</p>
+                    <p class="text-gray-700"><span class="font-semibold" data-lang-key="role_label">Vai trò & Trách nhiệm:</span> <span data-lang-key="project2_role">Tham gia thiết kế cơ sở dữ liệu, phát triển mô hình cho ứng dụng di động, tích hợp API, thiết kế và triển khai Web Services, hỗ trợ xây dựng giao diện ứngчасть
+
+                    <p class="text-gray-700"><span class="font-semibold" data-lang-key="description_label">Mô tả:</span> <span data-lang-key="project2_description">Ứng dụng giúp người dùng theo dõi thu nhập, chi tiêu và tạo báo cáo tài chính.</span></p>
+                    <p class="text-gray-700"><span class="font-semibold" data-lang-key="technologies_label">Công nghệ sử dụng:</span></p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li data-lang-key="project2_tech_backend">Backend: Java, PHP, MySQL</li>
+                        <li data-lang-key="project2_tech_frontend">Frontend: HTML, CSS, JavaScript, PHP</li>
+                        <li data-lang-key="project2_architecture">Kiến trúc: MVVM (App), MVC (Web Service, Website)</li>
+                    </ul>
+                    <p class="text-gray-700"><span class="font-semibold">GitHub:</span> <a href="https://github.com/yourusername/WebService-Financial-Management" class="text-blue-500 hover:underline" data-lang-key="project2_github">WebService Financial Management</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Language -->
+        <section class="mb-8">
+            <h2 class="section-title" data-lang-key="language_title">Ngôn Ngữ</h2>
+            <p class="text-gray-700" data-lang-key="language">Tiếng Anh</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p data-lang-key="footer">© 2025 Nguyễn Xuân Thịnh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const translations = {
+            vi: {
+                name: "Nguyễn Xuân Thịnh",
+                title: "Software Engineer",
+                phone_label: "Phone:",
+                email_label: "Email:",
+                address_label: "Address:",
+                address: "Tăng Nhơn Phú A, TP. Thủ Đức",
+                career_objective_title: "Mục Tiêu Nghề Nghiệp",
+                career_objective: "Tôi mong muốn nâng cao kỹ năng phát triển phần mềm thông qua các dự án thực tế, tập trung vào giải quyết vấn đề, thiết kế hệ thống và chuyên môn kỹ thuật. Mục tiêu dài hạn là trở thành một lập trình viên xuất sắc, có khả năng xây dựng các ứng dụng mở rộng, hiệu suất cao, đóng góp các giải pháp sáng tạo và đảm nhận vai trò lãnh đạo trong lĩnh vực phát triển phần mềm.",
+                skills_title: "Kỹ Năng",
+                technical_skills: "Kỹ Năng Kỹ Thuật",
+                soft_skills: "Kỹ Năng Mềm",
+                problem_solving: "Giải quyết vấn đề",
+                teamwork: "Làm việc nhóm",
+                communication: "Giao tiếp",
+                time_management: "Quản lý thời gian",
+                adaptability: "Khả năng thích ứng",
+                tools: "Tools: Visual Studio Code, IntelliJ IDEA, Android Studio, Docker, Git, Postman",
+                education_title: "Học Vấn",
+                university: "Học viện Công nghệ Bưu chính Viễn thông (PTIT)",
+                major: "Chuyên ngành: Công nghệ Phần mềm",
+                degree_classification: "Xếp loại tốt nghiệp: Khá",
+                scholarship: "Đạt học bổng học tập học kỳ 2 năm học 2023-2024",
+                projects_title: "Dự Án",
+                project1_title: "Website Cửa hàng Thời trang (09/2024 - 10/2024)",
+                fullstack_role: "Full-Stack",
+                description_label: "Mô tả:",
+                project1_description: "Website hỗ trợ khách hàng đăng nhập, đăng ký, quản lý giỏ hàng, thanh toán, đánh giá sản phẩm, và quản lý thông tin cá nhân. Phía quản trị viên có thể quản lý sản phẩm, thuộc tính sản phẩm, nhà cung cấp, khách hàng, đơn hàng và thống kê.",
+                technologies_label: "Công nghệ sử dụng:",
+                project1_tech_backend: "Backend: Java (Spring Boot), Hibernate, JPA, MySQL",
+                project1_tech_frontend: "Frontend: HTML, CSS, JavaScript, Bootstrap",
+                project1_architecture: "Kiến trúc: MVC",
+                project1_github: "Website Fashion Store",
+                project2_title: "Website & App Quản lý Chi tiêu (03/2024 - 05/2024)",
+                backend_role: "Backend",
+                role_label: "Vai trò & Trách nhiệm:",
+                project2_role: "Tham gia thiết kế cơ sở dữ liệu, phát triển mô hình cho ứng dụng di động, tích hợp API, thiết kế và triển khai Web Services, hỗ trợ xây dựng giao diện ứng dụng di động.",
+                project2_description: "Ứng dụng giúp người dùng theo dõi thu nhập, chi tiêu và tạo báo cáo tài chính.",
+                project2_tech_backend: "Backend: Java, PHP, MySQL",
+                project2_tech_frontend: "Frontend: HTML, CSS, JavaScript, PHP",
+                project2_architecture: "Kiến trúc: MVVM (App), MVC (Web Service, Website)",
+                project2_github: "WebService Financial Management",
+                language_title: "Ngôn Ngữ",
+                language: "Tiếng Anh",
+                footer: "© 2025 Nguyễn Xuân Thịnh. All rights reserved."
+            },
+            en: {
+                name: "Nguyen Xuan Thinh",
+                title: "Software Engineer",
+                phone_label: "Phone:",
+                email_label: "Email:",
+                address_label: "Address:",
+                address: "Tang Nhon Phu A, Thu Duc City",
+                career_objective_title: "Career Objective",
+                career_objective: "I aim to enhance my software development skills through real-world projects, focusing on problem-solving, system design, and technical expertise. My long-term goal is to become an outstanding programmer, capable of building scalable, high-performance applications, contributing innovative solutions, and taking on leadership roles in software development.",
+                skills_title: "Skills",
+                technical_skills: "Technical Skills",
+                soft_skills: "Soft Skills",
+                problem_solving: "Problem Solving",
+                teamwork: "Teamwork",
+                communication: "Communication",
+                time_management: "Time Management",
+                adaptability: "Adaptability",
+                tools: "Tools: Visual Studio Code, IntelliJ IDEA, Android Studio, Docker, Git, Postman",
+                education_title: "Education",
+                university: "Posts and Telecommunications Institute of Technology (PTIT)",
+                major: "Major: Software Engineering",
+                degree_classification: "Degree Classification: Good",
+                scholarship: "Received academic scholarship for Semester 2 of the 2023-2024 academic year",
+                projects_title: "Projects",
+                project1_title: "Fashion Store Website (09/2024 - 10/2024)",
+                fullstack_role: "Full-Stack",
+                description_label: "Description:",
+                project1_description: "The website supports customer login, registration, cart management, payment, product reviews, and personal information management. Administrators can manage products, product attributes, suppliers, customers, orders, and statistics.",
+                technologies_label: "Technologies Used:",
+                project1_tech_backend: "Backend: Java (Spring Boot), Hibernate, JPA, MySQL",
+                project1_tech_frontend: "Frontend: HTML, CSS, JavaScript, Bootstrap",
+                project1_architecture: "Architecture: MVC",
+                project1_github: "Website Fashion Store",
+                project2_title: "Expense Management Website & App (03/2024 - 05/2024)",
+                backend_role: "Backend",
+                role_label: "Role & Responsibilities:",
+                project2_role: "Participated in database design, developed models for the mobile application, integrated APIs, designed and implemented Web Services, and supported mobile app interface development.",
+                project2_description: "The application helps users track income, expenses, and generate financial reports.",
+                project2_tech_backend: "Backend: Java, PHP, MySQL",
+                project2_tech_frontend: "Frontend: HTML, CSS, JavaScript, PHP",
+                project2_architecture: "Architecture: MVVM (App), MVC (Web Service, Website)",
+                project2_github: "WebService Financial Management",
+                language_title: "Language",
+                language: "English",
+                footer: "© 2025 Nguyen Xuan Thinh. All rights reserved."
+            }
+        };
+
+        function setLanguage(lang) {
+            document.querySelectorAll('[data-lang-key]').forEach(element => {
+                const key = element.getAttribute('data-lang-key');
+                element.textContent = translations[lang][key];
+            });
+            document.getElementById('lang-vi').classList.toggle('bg-blue-500', lang === 'vi');
+            document.getElementById('lang-vi').classList.toggle('text-white', lang === 'vi');
+            document.getElementById('lang-vi').classList.toggle('bg-gray-300', lang !== 'vi');
+            document.getElementById('lang-vi').classList.toggle('text-gray-800', lang !== 'vi');
+            document.getElementById('lang-en').classList.toggle('bg-blue-500', lang === 'en');
+            document.getElementById('lang-en').classList.toggle('text-white', lang === 'en');
+            document.getElementById('lang-en').classList.toggle('bg-gray-300', lang !== 'en');
+            document.getElementById('lang-en').classList.toggle('text-gray-800', lang !== 'en');
+        }
+
+        document.getElementById('lang-vi').addEventListener('click', () => setLanguage('vi'));
+        document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
+
+        // Set default language to Vietnamese
+        setLanguage('vi');
+    </script>
+</body>
+</html>
